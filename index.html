@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <script>
+        fetch("https://cdn.contentful.com/spaces/2d51prtpcij/environments/master/content_types?access_token=p2fvzwFH_nHaHv_Z07EzBq4HR9e31ciKzWWbReXpHkE")
+  .then(r => r.json())
+  .then(d => console.log(d.items.map(x => x.sys.id)));
+
+    </script>
+</body>
+</html>
