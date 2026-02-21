@@ -8,8 +8,7 @@ def calculator():
         if opp not in ["+", "-", "*", "/"]:
             print("Invalid operation")
             continue
-        num2_str = input("Enter the second number: ")
-        
+        num2_str = input("Enter the second number: ")       
 
         try:
             num1 = float(num1_str)
